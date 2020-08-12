@@ -38,6 +38,8 @@
 			border-collapse: collapse;
 		}
 		.tbl_2 {
+			font-size: 14px;
+			color: navy;
 			width: 1000px;
 			table-layout: fixed;
 			border-collapse: collapse;
@@ -48,11 +50,19 @@
 			table-layout: fixed;
 			border-collapse: collapse;
 		}
-<!--		.tbl .ex1, .tbl .ex2, .tbl .ex3, .tbl .ex4, .tbl .ex5, .tbl .ex6-->
-<!--		.tbl .ex7, .tbl .ex8, .tbl .ex9, .tbl .ex10, .tbl .ex11, .tbl .ex12-->
-<!--		{-->
-<!--			empty-cells: hide; /*border-collapse 상에서는 표현(X)*/-->
-<!--		}-->
+		.tbl .ex1, .tbl .ex2, .tbl .ex3, .tbl .ex4, .tbl .ex5, .tbl .ex6
+		.tbl .ex7, .tbl .ex8, .tbl .ex9, .tbl .ex10, .tbl .ex11, .tbl .ex12
+		{
+			empty-cells: hide; /*border-collapse 상에서는 표현(X)*/
+		}
+		.btn a {
+			color: #333;
+			text-decoration: none;
+		}
+		.btn_a a{
+			color: navy;
+			text-decoration: none;
+		}
     </style>
 </head>
 <body>
@@ -69,14 +79,14 @@
 <table class="tbl">
 	<thead>
 		<tr>
-			<th scope="col">사전홈</th>
-			<th scope="col">종합정보시스템</th>
-            <th scope="col">e-class</th>
-            <th scope="col">에브리타임</th>
-			<th scope="col">학사공지</th>
-            <th scope="col">학사일정</th>
-			<th scope="col">도서관</th>
-			<th scope="col">위치</th>
+			<th scope="col" class="btn"><a href="http://127.0.0.1:8000/dictionary/">사전홈</a></th>
+			<th scope="col" class="btn"><a href="http://swis.swu.ac.kr/">종합정보시스템</a></th>
+            <th scope="col" class="btn"><a href="http://cyber.swu.ac.kr/ilos/main/main_form.acl">e-class</a></th>
+            <th scope="col" class="btn"><a href="https://everytime.kr/">에브리타임</a></th>
+			<th scope="col" class="btn"><a href="http://www.swu.ac.kr/www/noticea.html">학사공지</a></th>
+            <th scope="col" class="btn"><a href="http://www.swu.ac.kr/www/bachb_1.html">학사일정</a></th>
+			<th scope="col" class="btn"><a href="http://lib.swu.ac.kr/">도서관</a></th>
+			<th scope="col" class="btn"><a href="http://www.swu.ac.kr/www/cama.html">위치</a></th>
 		</tr>
 	</thead>
 </table>
@@ -91,12 +101,12 @@
 <table class="tbl_1">
 	<thead>
 		<tr>
-			<th scope="col">경영학과</th>
-			<th scope="col">패션산업학과</th>
-            <th scope="col">디지털미디어학과</th>
-            <th scope="col">정보보호학과</th>
-			<th scope="col">소프트웨어융합학과</th>
-            <th scope="col">산업디자인학과</th>
+			<th scope="col" class="btn"><a href="https://bizswu.swu.ac.kr/">경영학과</a></th>
+			<th scope="col" class="btn"><a href="http://www.swu.ac.kr/www/futureb_1.html">패션산업학과</a></th>
+            <th scope="col" class="btn"><a href="http://dm.swu.ac.kr/">디지털미디어학과</a></th>
+            <th scope="col" class="btn"><a href="http://security.swu.ac.kr/">정보보호학과</a></th>
+			<th scope="col" class="btn"><a href="http://sw.swu.ac.kr/">소프트웨어융합학과</a></th>
+            <th scope="col" class="btn"><a href="http://id.swu.ac.kr/">산업디자인학과</a></th>
 		</tr>
 	</thead>
 </table>
@@ -114,17 +124,20 @@
 <br>
 <br>
 <hr>
+<br>
 
 <table class="tbl_2">
 	<thead>
 		<tr>
-			<th scope="col">서울여대 바로가기</th>
+			<th scope="col" class="btn_a"><a href="http://www.swu.ac.kr/">서울여대 바로가기</a></th>
 			<th scope="col"></th>
 			<th scope="col"></th>
 			<th scope="col"></th>
 		</tr>
 	</thead>
 </table>
+
+<br>
 
 <table class="tbl_3">
 	<thead>
@@ -136,73 +149,73 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td>입학처</td>
-			<td>경건회</td>
-			<td>인문대학</td>
+			<td class="btn"><a href="http://admission.swu.ac.kr/?intro=N">입학처</a></td>
+			<td class="btn"><a href="http://127.0.0.1:8000/dictionary/5/">경건회</a></td>
+			<td class="btn"><a href="http://www.swu.ac.kr/www/liberala_1.html">인문대학</a></td>
 		</tr>
 		<tr>
-			<td>수시모집</td>
-			<td>바롬인성교육</td>
-			<td>사회과학대학</td>
+			<td class="btn"><a href="http://admission.swu.ac.kr/ipsi/mojip.htm?ctg_cd=susi">수시모집</a></td>
+			<td class="btn"><a href="http://127.0.0.1:8000/dictionary/6/">바롬인성교육</a></td>
+			<td class="btn"><a href="http://www.swu.ac.kr/www/sociencea_1.html">사회과학대학</a></td>
 		</tr>
 		<tr>
-			<td>정시모집</td>
-			<td>샬롬하우스</td>
-			<td>자연과학대학</td>
+			<td class="btn"><a href="http://admission.swu.ac.kr/ipsi/mojip.htm?ctg_cd=jungsi">정시모집</a></td>
+			<td class="btn"><a href="http://127.0.0.1:8000/dictionary/7/">샬롬하우스</a></td>
+			<td class="btn"><a href="http://www.swu.ac.kr/www/natusciencea_1.html">자연과학대학</a></td>
 		</tr>
         <tr>
-			<td>편입학모집</td>
-			<td>지도교수</td>
-			<td>미래산업융합대학</td>
+			<td class="btn"><a href="http://admission.swu.ac.kr/ipsi/mojip.htm?ctg_cd=transfer">편입학모집</a></td>
+			<td class="btn"><a href="http://127.0.0.1:8000/dictionary/8/">지도교수</a></td>
+			<td class="btn"><a href="http://www.swu.ac.kr/www/futurea_1.html">미래산업융합대학</a></td>
 		</tr>
         <tr>
-			<td>대학소개</td>
-			<td>SL</td>
-			<td>아트앤디자인스쿨</td>
+			<td class="btn"><a href="http://www.swu.ac.kr/www/prea.html">대학소개</a></td>
+			<td class="btn"><a href="http://127.0.0.1:8000/dictionary/9/">SL</a></td>
+			<td class="btn"><a href="http://www.swu.ac.kr/www/artdesigna_1.html">아트앤디자인스쿨</a></td>
 		</tr>
         <tr>
-			<td>기독교개론</td>
-			<td>소학회</td>
-			<td>자율전공학부</td>
+			<td class="btn"><a href="http://127.0.0.1:8000/dictionary/2/">기독교개론</a></td>
+			<td class="btn"><a href="http://127.0.0.1:8000/dictionary/10/">소학회</a></td>
+			<td class="btn"><a href="https://premajors.swu.ac.kr/">자율전공학부</a></td>
 		</tr>
         <tr>
-			<td>대학영어</td>
-			<td>GURU</td>
-			<td>연계융합전공</td>
+			<td class="btn"><a href="http://127.0.0.1:8000/dictionary/3/">대학영어</a></td>
+			<td class="btn"><a href="http://127.0.0.1:8000/dictionary/11/">GURU</a></td>
+			<td class="btn"><a href="http://www.swu.ac.kr/www/connecta_1.html">연계융합전공</a></td>
 		</tr>
         <tr>
-			<td>소프트웨어와 창의적사고</td>
-			<td>슈니</td>
-			<td>바롬인성교육원</td>
+			<td class="btn"><a href="http://127.0.0.1:8000/dictionary/4/">소프트웨어와 창의적사고</a></td>
+			<td class="btn"><a href="http://127.0.0.1:8000/dictionary/12/">슈니</a></td>
+			<td class="btn"><a href="https://bahrom.swu.ac.kr/">바롬인성교육원</a></td>
 		</tr>
         <tr>
 			<td class="ex1"></td>
-			<td>CAT-TOEIC</td>
+			<td class="btn"><a href="http://127.0.0.1:8000/dictionary/13/">CAT-TOEIC</a></td>
 			<td class="ex2"></td>
 		</tr>
         <tr>
 			<td class="ex3"></td>
-			<td>계절학기</td>
+			<td class="btn"><a href="http://127.0.0.1:8000/dictionary/14/">계절학기</a></td>
 			<td class="ex4"></td>
 		</tr>
         <tr>
 			<td class="ex5"></td>
-			<td>드랍</td>
+			<td class="btn"><a href="http://127.0.0.1:8000/dictionary/15/">드랍</a></td>
 			<td class="ex6"></td>
 		</tr>
         <tr>
 			<td class="ex7"></td>
-			<td>복수전공</td>
+			<td class="btn"><a href="http://127.0.0.1:8000/dictionary/16/">복수전공</a></td>
 			<td class="ex8"></td>
 		</tr>
         <tr>
 			<td class="ex9"></td>
-			<td>Honors Program</td>
+			<td class="btn"><a href="http://127.0.0.1:8000/dictionary/17/">Honors Program</a></td>
 			<td class="ex10"></td>
 		</tr>
         <tr>
 			<td class="ex11"></td>
-			<td>SWU 영어 영예등급</td>
+			<td class="btn"><a href="http://127.0.0.1:8000/dictionary/18/">SWU 영어 영예등급</a></td>
 			<td class="ex12"></td>
 		</tr>
 	</tbody>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ dictionary_post.title }}</title>
+    <style>
+        h1 {
+			font-family: 'Malgun Gothic',Helvetica,sans-serif;
+			font-size: 12px;
+		}
+        h1 {
+            color: white;
+            background-color: green;
+            font-size: 2.4em;
+            letter-spacing: .1em;
+        }
+        .tbl {
+            width: 1000px;
+			table-layout: fixed;
+			border-collapse: collapse;
+		}
+		.btn a {
+			color: #333;
+			text-decoration: none;
+		}
+    </style>
+</head>
+<body>
+
+<div id="wrap">
+	<!-- header -->
+	<header id="header">
+		<h1>서울여자대학교 사전</h1>
+	</header>
+</div>
+
+<hr>
+
+<table class="tbl">
+	<thead>
+		<tr>
+			<th scope="col" class="btn"><a href="http://127.0.0.1:8000/dictionary/">사전홈</a></th>
+			<th scope="col" class="btn"><a href="http://swis.swu.ac.kr/">종합정보시스템</a></th>
+            <th scope="col" class="btn"><a href="http://cyber.swu.ac.kr/ilos/main/main_form.acl">e-class</a></th>
+            <th scope="col" class="btn"><a href="https://everytime.kr/">에브리타임</a></th>
+			<th scope="col" class="btn"><a href="http://www.swu.ac.kr/www/noticea.html">학사공지</a></th>
+            <th scope="col" class="btn"><a href="http://www.swu.ac.kr/www/bachb_1.html">학사일정</a></th>
+			<th scope="col" class="btn"><a href="http://lib.swu.ac.kr/">도서관</a></th>
+			<th scope="col" class="btn"><a href="http://www.swu.ac.kr/www/cama.html">위치</a></th>
+		</tr>
+	</thead>
+</table>
+
+<hr>
+
+<div>
+    {{ dictionary_post.content }}
+</div>
+
+</body>
+</html>
