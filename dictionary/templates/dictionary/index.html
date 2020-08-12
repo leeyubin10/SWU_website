@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -9,8 +10,9 @@
 			font-size: 12px;
 		}
         h1 {
+        	margin:0 ;
             color: white;
-            background-color: green;
+            background-color: #A53235;
             font-size: 2.4em;
             letter-spacing: .1em;
         }
@@ -27,9 +29,15 @@
 			color: gray;
 		}
         .tbl {
-            width: 1000px;
+        	line-height:2.5;
+        	margin:2 ;
+            width: 80%;
 			table-layout: fixed;
 			border-collapse: collapse;
+		}
+		.tbl .btn strong   {
+			color:#A53235;
+			border-bottom: 4px solid #A53235;
 		}
 		.tbl_1 {
 		    font-size: 12px;
@@ -72,14 +80,12 @@
 	<header id="header">
 		<h1>서울여자대학교 사전</h1>
 	</header>
-</div>
 
-<hr>
 
 <table class="tbl">
 	<thead>
 		<tr>
-			<th scope="col" class="btn"><a href="http://127.0.0.1:8000/dictionary/">사전홈</a></th>
+			<th scope="col" class="btn"><a href="http://127.0.0.1:8000/dictionary/"><strong>사전홈</strong></a></th>
 			<th scope="col" class="btn"><a href="http://swis.swu.ac.kr/">종합정보시스템</a></th>
             <th scope="col" class="btn"><a href="http://cyber.swu.ac.kr/ilos/main/main_form.acl">e-class</a></th>
             <th scope="col" class="btn"><a href="https://everytime.kr/">에브리타임</a></th>
@@ -91,7 +97,9 @@
 	</thead>
 </table>
 
-<hr>
+</div>
+
+<!--<hr>-->
 <br>
 
 <h2></h2>
