@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-{% load static %}
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -15,6 +14,16 @@
             background-color: #A53235;
             font-size: 2.4em;
             letter-spacing: .1em;
+        }
+        h1 button {
+        	position:absolute;
+        	left: 90%;
+        	top:25px;
+        }
+        h1 img{
+        	position:relative;
+        	left: 4px;
+        	top:5px;
         }
         h2 {
             color: gray;
@@ -78,7 +87,7 @@
 <div id="wrap">
 	<!-- header -->
 	<header id="header">
-		<h1>서울여자대학교 사전</h1>
+		<h1><img src="img/swu_logo.jpg" width="40px" height="40px"><button class="btn btn-sm btn-outline-secondary "type="button" >Login</button> 서울여자대학교 사전</h1>
 	</header>
 
 
