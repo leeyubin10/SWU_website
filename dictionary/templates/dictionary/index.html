@@ -18,7 +18,7 @@
         }
         h2 {
             color: gray;
-            font-size: 1.5em;
+            font-size: 2em;
         }
         h2:before {
 			content: '미래산업';
@@ -71,6 +71,14 @@
 			color: navy;
 			text-decoration: none;
 		}
+		.search input[type=text]{
+			width:700px;
+			height:50px;
+		}
+		.search input[type=submit{
+			width:80px;
+			height:50px;
+		}
     </style>
 </head>
 <body>
@@ -119,13 +127,15 @@
 	</thead>
 </table>
 
-<form action="#" method="post">
-    <p>
-        <label for="search_content"></label>
-        <input width="600px" height="40px" type="text" id="search_content" name="search_content" value="" placeholder="검색어를 입력하세요">
-        <input width="40px" height="20px" type="submit" value="Search">
-    </p>
-</form>
+<div class="search">
+	<form action="#" method="post">
+    	<p>
+			<label for="search_content"></label>
+			<input type="text" id="search_content" name="search_content" value="" placeholder="검색어를 입력하세요">
+			<input type="submit" value="Search">
+		</p>
+	</form>
+</div>
 
 <br>
 <br>
